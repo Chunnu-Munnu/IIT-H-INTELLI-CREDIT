@@ -1,0 +1,71 @@
+.dock-outer {
+  margin: 0;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.dock-panel {
+  display: flex;
+  align-items: flex-end;
+  width: fit-content;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(15px);
+  border: 1px solid #fff;
+  padding: 10px;
+  pointer-events: auto;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.5);
+}
+
+.dock-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.dock-item:hover {
+  background-color: #fff;
+}
+
+.dock-item:hover .dock-icon {
+  color: #000;
+}
+
+.dock-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.dock-label {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: fit-content;
+  white-space: pre;
+  border: 1px solid #fff;
+  background-color: #000;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  color: #fff;
+  transform: translateX(-50%);
+  z-index: 1001;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

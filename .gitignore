@@ -1,0 +1,73 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+venv/
+.venv/
+env/
+.env/
+.pytest_cache/
+.mypy_cache/
+*.joblib
+*.pkl
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+data/raw_uploads/
+data/processed/
+data/models/
+ml_training/datasets/*.csv
+ml_training/datasets/*.zip
+ml_training/datasets/home_credit/
+ml_training/datasets/corporate_credit/
+ml_training/datasets/sme_credit/
+ml_training/datasets/unified_training_data.csv
+ml_training/datasets/synthetic_credit_data.csv
+logs/
+MONGODB_URI=mongodb://localhost:27017
+DB_NAME=intelli_credit
+SECRET_KEY=your-256-bit-secret-key-here-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_HOURS=24
+UPLOAD_DIR=./data/raw_uploads
+PROCESSED_DIR=./data/processed
+MODEL_DIR=./data/models
+OCR_GPU_ENABLED=false
+GST_BANK_INFLATION_THRESHOLD=1.4
+ITC_INFLATION_THRESHOLD=1.05
+LOG_LEVEL=INFO
+ENVIRONMENT=development
+
+# ── Gemini AI (Google) ─────────────────────────────────
+GEMINI_API_KEY=AIzaSyDDeKJuFe7_za7DSh51cxUDOQLpE_x8zHs
+GEMINI_MODEL=gemini-2.0-flash
+
+# ── Frontend ───────────────────────────────────────────
+FRONTEND_URL=http://localhost:5173
+# environment
+.env
+
+# python cache
+__pycache__/
+*.pyc
+
+# datasets
+backend/ml_training/datasets/
+
+# uploaded files
+backend/data/raw_uploads/
+backend/data/processed/
+
+# logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
